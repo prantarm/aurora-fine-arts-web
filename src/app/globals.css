@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-neutral-900: #171717;
+  --color-print-cyan: #00B7EB;
+  --color-print-magenta: #E30066;
+  --color-print-yellow: #FFD700;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+/* Optional custom utility for the rigid borders */
+@layer utilities {
+  .bento-border {
+    @apply border-2 border-black;
+  }
+}
